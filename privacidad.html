@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad · nucleus pd</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --yellow: #F5C800;
+    --neon: #C8FF00;
+    --black: #0F0F0D;
+    --gray3: #9A9A90;
+    --border: rgba(255,255,255,0.08);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--black);
+    color: white;
+    font-family: 'Sora', sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  nav {
+    padding: 24px 48px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @media (max-width: 600px) { nav { padding: 20px 24px; } }
+
+  .wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 72px 48px 100px;
+  }
+
+  @media (max-width: 600px) { .wrapper { padding: 48px 24px 80px; } }
+
+  .kicker {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--yellow);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .kicker::before {
+    content: '';
+    width: 16px; height: 1px;
+    background: var(--yellow);
+    display: block;
+  }
+
+  h1 {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 800;
+    margin-bottom: 12px;
+    line-height: 1.1;
+  }
+
+  .date {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--gray3);
+    margin-bottom: 56px;
+    display: block;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--yellow);
+    margin-bottom: 14px;
+    margin-top: 40px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.5px;
+  }
+
+  p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 14px;
+    line-height: 1.8;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 14px;
+  }
+
+  ul li {
+    font-size: 15px;
+    color: rgba(255,255,255,0.65);
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    display: flex;
+    gap: 10px;
+    line-height: 1.6;
+  }
+
+  ul li:last-child { border-bottom: none; }
+
+  ul li::before {
+    content: '→';
+    color: var(--neon);
+    flex-shrink: 0;
+  }
+
+  strong { color: white; font-weight: 600; }
+
+  .highlight {
+    background: rgba(245,200,0,0.05);
+    border: 1px solid rgba(245,200,0,0.15);
+    border-radius: 4px;
+    padding: 20px 24px;
+    margin: 24px 0;
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.7;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 32px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  @media (max-width: 600px) { footer { padding: 24px; flex-direction: column; text-align: center; } }
+
+  .footer-brand { font-size: 16px; font-weight: 700; }
+  .footer-note { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--gray3); }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">
+    <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+      <circle cx="16" cy="16" r="14" stroke="#3A3A32" stroke-width="1"/>
+      <path d="M16 2 A14 14 0 1 1 4 22" stroke="#F5C800" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+      <circle cx="16" cy="16" r="5" fill="#F5C800"/>
+      <circle cx="4" cy="22" r="3" fill="#C8FF00"/>
+    </svg>
+    nucleus
+  </a>
+</nav>
+
+<div class="wrapper">
+
+  <div class="kicker">Legal</div>
+  <h1>Política de Privacidad</h1>
+  <span class="date">Última actualización: marzo 2026</span>
+
+  <p>Esta política describe cómo <strong>nucleus · PD</strong> accede, usa y protege los datos obtenidos a través de la aplicación <strong>marketing-hub-nucleus</strong>, registrada en Meta for Developers, en el contexto de implementaciones de sistemas de analítica para negocios.</p>
+
+  <div class="highlight">
+    Esta aplicación accede únicamente a datos de las cuentas de Meta (Facebook e Instagram) que pertenecen al propietario del negocio y que este ha autorizado expresamente. No se accede a datos de terceros ni de usuarios finales.
+  </div>
+
+  <hr class="divider">
+
+  <h2>1. Datos que se recopilan</h2>
+  <p>La aplicación puede acceder a los siguientes datos de las cuentas autorizadas:</p>
+  <ul>
+    <li>Métricas de la página de Facebook: seguidores, alcance, impresiones, engagement</li>
+    <li>Métricas de la cuenta de Instagram Business: seguidores, publicaciones, engagement, alcance</li>
+    <li>Datos de campañas publicitarias en Meta Ads: inversión, impresiones, clics, conversiones</li>
+  </ul>
+
+  <h2>2. Cómo se usan los datos</h2>
+  <p>Los datos recopilados se utilizan exclusivamente para:</p>
+  <ul>
+    <li>Generar reportes internos de rendimiento del negocio</li>
+    <li>Alimentar dashboards privados configurados en Google Looker Studio</li>
+    <li>Almacenarse en Google Sheets bajo control exclusivo del propietario de la cuenta autorizada</li>
+  </ul>
+  <p>Los datos no se usan con fines publicitarios, de análisis de mercado ni de ningún propósito ajeno al negocio del propietario de la cuenta.</p>
+
+  <h2>3. Almacenamiento y acceso</h2>
+  <p>Los datos se almacenan en los servicios de Google (Google Sheets y Looker Studio) bajo el control exclusivo del propietario del negocio. nucleus · PD no mantiene copias independientes de los datos una vez finalizada la implementación.</p>
+  <p>Solo tienen acceso a los datos las personas expresamente autorizadas por el propietario de la cuenta.</p>
+
+  <h2>4. Compartir datos con terceros</h2>
+  <p>nucleus · PD <strong>no comparte, vende, alquila ni transfiere</strong> datos de usuarios o de cuentas a terceros bajo ninguna circunstancia.</p>
+
+  <h2>5. Retención de datos</h2>
+  <p>Los datos permanecen en los archivos de Google del propietario del negocio. nucleus · PD no retiene datos de las cuentas una vez completada la configuración del sistema, salvo que el propietario lo solicite expresamente para soporte técnico.</p>
+
+  <h2>6. Eliminación de datos</h2>
+  <p>Para solicitar la eliminación de cualquier dato relacionado con su cuenta, puede contactarnos directamente a través de los canales indicados a continuación. Procesamos la solicitud en un plazo máximo de <strong>7 días hábiles.</strong></p>
+
+  <h2>7. Cambios a esta política</h2>
+  <p>Esta política puede actualizarse cuando sea necesario. La fecha de última actualización se indica en la parte superior de esta página. El uso continuado del sistema implica la aceptación de los términos vigentes.</p>
+
+  <h2>8. Contacto</h2>
+  <p>Para consultas relacionadas con privacidad o solicitudes de eliminación de datos:</p>
+  <ul>
+    <li><strong>Email:</strong> delorbepaola@gmail.com</li>
+    <li><strong>WhatsApp:</strong> +1 (829) 348-0160</li>
+    <li><strong>Empresa:</strong> nucleus · Paola Del Orbe</li>
+    <li><strong>Ubicación:</strong> Santo Domingo, República Dominicana</li>
+  </ul>
+
+</div>
+
+<footer>
+  <div class="footer-brand">nucleus · pd</div>
+  <div class="footer-note">© 2026 · Paola Del Orbe · Santo Domingo, RD</div>
+</footer>
+
+</body>
+</html>
